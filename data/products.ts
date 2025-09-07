@@ -46,7 +46,7 @@ export const mockProducts: Product[] = [
     brand: 'GlowSkin',
     category: 'skincare',
     subcategory: 'Serums',
-    price: 89.99,
+    price: 35.000,
     description: 'Serum concentrado con vitamina C que ilumina y unifica el tono de la piel, reduciendo manchas y signos de envejecimiento.',
     ingredients: [
       'Ácido L-Ascórbico (Vitamina C)',
@@ -64,16 +64,16 @@ export const mockProducts: Product[] = [
     usage: 'Aplicar 2-3 gotas en rostro limpio por las mañanas. Seguir con protector solar.',
     images: [
       {
-        url: '/images/products/skincare/vitamin-c-serum-main.jpg',
+        url: 'https://drive.google.com/uc?export=view&id=1nFq-3-_rYqKYsKxVEwCijPKCURDf28Zp',
         alt: 'Serum de Vitamina C - Vista principal',
         isMain: true
       },
       {
-        url: '/images/products/skincare/vitamin-c-serum-texture.jpg',
+        url: 'https://drive.google.com/uc?export=view&id=1_a5MBMeog0CMXzpcWHaSkMF9bASHQQop',
         alt: 'Serum de Vitamina C - Textura',
         isMain: false
       }
-    ],
+    ],    
     tags: ['antioxidante', 'iluminador', 'anti-edad']
   },
   {
