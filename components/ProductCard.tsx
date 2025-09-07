@@ -1,13 +1,15 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { Product } from '@/types/product';
+import Image from "next/image";
+import Link from "next/link";
+import { Product } from "@/types/product";
+import { formatPrice } from "@/utils/format";
 
 interface ProductCardProps {
   product: Product;
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const mainImage = product.images.find(img => img.isMain) || product.images[0];
+  const mainImage =
+    product.images.find((img) => img.isMain) || product.images[0];
 
   return (
     <Link href={`/product/${product.id}`} className="group">
@@ -15,7 +17,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Imagen del producto */}
         <div className="relative aspect-square overflow-hidden">
           <Image
-            src={mainImage?.url || '/images/placeholder-product.jpg'}
+            src={mainImage?.url || "/images/placeholder-product.jpg"}
             alt={mainImage?.alt || product.name}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -27,7 +29,9 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="p-4">
           {/* Marca y categoría */}
           <div className="flex justify-between items-start mb-2">
-            <span className="text-sm text-gray-500 font-medium">{product.brand}</span>
+            <span className="text-sm text-gray-500 font-medium">
+              {product.brand}
+            </span>
             <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
               {product.subcategory}
             </span>
@@ -41,9 +45,9 @@ export default function ProductCard({ product }: ProductCardProps) {
           {/* Precio y tag principal */}
           <div className="flex items-center justify-between">
             <span className="text-lg font-bold text-gray-900">
-              ${product.price}
+              {formatPrice(product.price)}
             </span>
-            
+
             {/* Tag principal */}
             {product.tags.length > 0 && (
               <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full">

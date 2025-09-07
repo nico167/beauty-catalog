@@ -46,7 +46,7 @@ export const mockProducts: Product[] = [
     brand: 'GlowSkin',
     category: 'skincare',
     subcategory: 'Serums',
-    price: 35.000,
+    price: 35000,
     description: 'Serum concentrado con vitamina C que ilumina y unifica el tono de la piel, reduciendo manchas y signos de envejecimiento.',
     ingredients: [
       'Ácido L-Ascórbico (Vitamina C)',
@@ -82,7 +82,7 @@ export const mockProducts: Product[] = [
     brand: 'PureBeauty',
     category: 'makeup',
     subcategory: 'Base',
-    price: 65.99,
+    price: 50000,
     description: 'Base de cobertura media a completa con acabado natural. Fórmula libre de parabenos y apta para todo tipo de piel.',
     ingredients: [
       'Agua',
@@ -113,7 +113,7 @@ export const mockProducts: Product[] = [
     brand: 'HairLux',
     category: 'haircare',
     subcategory: 'Shampoo',
-    price: 45.99,
+    price: 29000,
     description: 'Shampoo reparador intensivo para cabello dañado y quebradizo. Con keratina y aceite de argán.',
     ingredients: [
       'Keratina hidrolizada',
@@ -144,7 +144,7 @@ export const mockProducts: Product[] = [
     brand: 'SoftSkin',
     category: 'bodycare',
     subcategory: 'Hidratantes',
-    price: 35.99,
+    price: 15800,
     description: 'Crema hidratante corporal de absorción rápida con manteca de karité y aceite de coco.',
     ingredients: [
       'Manteca de karité',
@@ -175,7 +175,7 @@ export const mockProducts: Product[] = [
     brand: 'Essence',
     category: 'fragrance',
     subcategory: 'Perfumes',
-    price: 125.99,
+    price: 12000,
     description: 'Fragancia femenina con notas florales de jazmín, rosa y peonía. Perfecta para ocasiones especiales.',
     ingredients: [
       'Alcohol denat.',
@@ -206,7 +206,7 @@ export const mockProducts: Product[] = [
     brand: 'ProMakeup',
     category: 'tools',
     subcategory: 'Brochas',
-    price: 78.99,
+    price: 24500,
     description: 'Set completo de 12 brochas profesionales para maquillaje con estuche incluido.',
     ingredients: [
       'Cerdas sintéticas',
